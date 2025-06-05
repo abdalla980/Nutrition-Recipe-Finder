@@ -1,0 +1,42 @@
+.itemContainer{
+    width: 300px;
+    border-radius: 8px;
+box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin:20px;
+    overflow: hidden;
+    font-family: Perpetua;
+    transition: transform 0.2s ease;
+}
+.itemContainer:hover{
+    transform:scale(1.02);
+    box-shadow: 0 6px 12px rgba(0,0,0, 0.1);
+}
+
+.itemImg{
+max-width: 100%;
+    height: auto;
+}
+.itemContent{
+    text-align: center;
+}
+
+
+.itemName{
+    font-size: 25px;
+    font-family: Perpetua;
+}
+.itemButton{
+cursor: pointer;
+    border-radius: 7px;
+    border: none;
+    font-size: 17px;
+    padding:10px;
+    font-family: Perpetua;
+
+}
+.buttonContainer{
+    margin-bottom: 20px;
+    display: flex;
+    justify-content:space-around;
+    text-align: center;
+}

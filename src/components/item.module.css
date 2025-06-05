@@ -1,0 +1,28 @@
+.itemContainer{
+    display: flex;
+    padding: 10px;
+    margin-top: 50px;
+    box-shadow: 0 4px 6px rgb(0, 0, 0, 0.1 );
+    border-radius: 10px;
+}
+.imageContainer{
+    width: 100px;
+    height: 100px;
+border-radius: 10px;
+}
+.img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+.nameContainer{
+    margin-left: 50px;
+}
+.name{
+    font-size: larger;
+    font-family: Perpetua;
+}
+.amount{
+    margin-top:10px;
+    font-family: Perpetua;
+}

@@ -3,7 +3,7 @@ import styles from './fooddetails.module.css'
     import ItemList from "./itemlist.tsx";
 
     export default function FoodDetails({ foodId }:any){
-        const [food,setFood]=useState({})
+        const [food,setFood]=useState<any>({})
         const[isLoading,setIsLoading]=useState(true)
         const URL = `https://api.spoonacular.com/recipes/${foodId}/information`
         const API_KEY = "946ff805dc364321a3394afb35a6a475";
@@ -47,7 +47,7 @@ import styles from './fooddetails.module.css'
       <ItemList food={food} isLoading={isLoading}/>
          <h2>Instructions</h2>
          <div className={styles.recipeInstruction}>
-             {isLoading ? <p>Loading...</p> : food.analyzedInstructions[0].steps.map((step) => (<li>{step.step} </li>))}
+             {isLoading ? <p>Loading...</p> : food.analyzedInstructions[0].steps.map((step:any) => (<li>{step.step} </li>))}
          </div>
      </div>
  </div>

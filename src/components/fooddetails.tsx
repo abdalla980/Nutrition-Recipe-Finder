@@ -47,7 +47,7 @@ import styles from './fooddetails.module.css'
       <ItemList food={food} isLoading={isLoading}/>
          <h2>Instructions</h2>
          <div className={styles.recipeInstruction}>
-             {isLoading ? <p>Loading...</p> : food.analyzedInstructions[0].steps.map((step) => (<li>{step.step}</li>))}
+             {isLoading ? <p>Loading...</p> : food.analyzedInstructions[0].steps.map((step) => (<li>{step.step} </li>))}
          </div>
      </div>
  </div>

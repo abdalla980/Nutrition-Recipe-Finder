@@ -1,6 +1,6 @@
 import styles from './fooditem.module.css'
 
-function Fooditem({food, setFoodId}){
+function Fooditem({food, setFoodId}:any){
     return(
         <div className={styles.itemContainer}>
             <img className={styles.itemImg} src={food.image} alt={" "}/>

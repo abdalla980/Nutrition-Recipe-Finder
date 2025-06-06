@@ -6,7 +6,7 @@ const API_KEY = "946ff805dc364321a3394afb35a6a475"
 
 
 
-function Search({foodData,setFoodData}){
+function Search({setFoodData}:any){
     const [query,setQuery]=useState("")
     useEffect(() => {
         async function fetchFood(){
@@ -20,7 +20,7 @@ const resp =   await fetch(`${URL}?query=${query}&apiKey=${API_KEY}`)
        <input
            className={styles.input}
            value={query}
-           onChange={(e)=>setQuery(e.target.value)}
+           onChange={(e:any)=>setQuery(e.target.value)}
            type={"text"}/>
 
        </div>

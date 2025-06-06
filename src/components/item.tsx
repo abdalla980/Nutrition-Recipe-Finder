@@ -1,6 +1,6 @@
 import styles from './item.module.css'
 
-export default function Item({item}){
+export default function Item({item}:any){
     return(
         <div className={styles.itemContainer}>
             <div className={styles.imageContainer}>

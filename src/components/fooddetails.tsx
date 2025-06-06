@@ -2,9 +2,9 @@
 import styles from './fooddetails.module.css'
     import ItemList from "./itemlist.tsx";
 
-    export default function FoodDetails({ foodId }){
+    export default function FoodDetails({ foodId }:any){
         const [food,setFood]=useState({})
-        const[isLoading,setisLoading]=useState(true)
+        const[isLoading,setIsLoading]=useState(true)
         const URL = `https://api.spoonacular.com/recipes/${foodId}/information`
         const API_KEY = "946ff805dc364321a3394afb35a6a475";
         useEffect(()=>{
@@ -15,7 +15,7 @@ import styles from './fooddetails.module.css'
                const Data= await resp.json()
                  console.log(Data)
                  setFood(Data)
-                 setisLoading(false)
+                 setIsLoading(false)
             }
             fetchFood()
         },[foodId])
